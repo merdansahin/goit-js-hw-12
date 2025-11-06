@@ -9,6 +9,7 @@ export default defineConfig(({ command }) => {
     define: {
       [command === 'serve' ? 'global' : '_global']: {},
     },
+    base: `/goit-js-hw-12`,
     root: 'src',
     build: {
       sourcemap: true,
@@ -44,5 +45,6 @@ export default defineConfig(({ command }) => {
         sort: 'mobile-first',
       }),
     ],
+    server: {open: true},
   };
 });
