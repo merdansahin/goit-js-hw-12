@@ -43,18 +43,19 @@ button {
 }
 .gallery-item {
   position: relative;
-
+  border-radius: 5px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   overflow: hidden;
   transition: transform 250ms ease-in-out;
-
+  height: 200px;
   &:hover {
     transform: scale(1.04);
   }
+  &:hover .info {
+    transform: translateY(0);
+  }
 }
 .image {
-  font-size: 14px;
-  line-height: 2;
   text-align: center;
 
   display: flex;
@@ -90,6 +91,7 @@ button {
 p {
   display: flex;
   flex-direction: column;
-  gap: 5px;
   margin-top: 0px;
+  font-size: 14px;
+  line-height: 1.2;
 }
